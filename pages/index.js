@@ -1,19 +1,15 @@
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 import db from '../db.json';
 
-import Widget from '../src/components/Widget'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-import QuizBackground from '../src/components/QuizBackground'
-import GitLogo from '../src/components/QuizLogo'
-
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
+import Widget from '../src/components/Widget';
+import QuizBackground from '../src/components/QuizBackground';
+import GitHubCorner from '../src/components/GitHubCorner';
+import QuizLogo from '../src/components/QuizLogo';
+import Footer from '../src/components/Footer';
 
 const QuizContainer = styled.div`
   width: 100%;
@@ -26,21 +22,46 @@ const QuizContainer = styled.div`
   }
 `;
 
-
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>{db.title}</title>
+      </Head>
 
       <QuizContainer>
-
+        <QuizLogo />
         <Widget>
 
           <Widget.Header>
             <h1>{db.title}</h1>
           </Widget.Header>
 
-          <Widget.Content>  
-            <p>{db.description}</p>
+          <Widget.Content>
+            <form onSubmit={(event) => {
+              event.preventDefault();
+
+              router.push(`/quiz?name=${name}`);
+              // console.log('fazendo um submissão por meio do react');
+            }}
+            >
+              <input
+                onChange={(event) => {
+                  // console.log(event.target.value);
+                  // name = event.target.value;
+                  setName(event.target.value);
+                }}
+                placeholder="Diga o seu nome"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+                {' '}
+                {name}
+              </button>
+            </form>
           </Widget.Content>
 
         </Widget>
@@ -48,10 +69,10 @@ export default function Home() {
         <Widget>
 
           <Widget.Content>
-              <h1>
-                {db.title}
-              </h1>
-              <p>{db.description}</p>
+            <h1>
+              {db.title}
+            </h1>
+            <p>{db.description}</p>
           </Widget.Content>
 
         </Widget>
@@ -63,5 +84,5 @@ export default function Home() {
       <GitHubCorner projectUrl="https://github.com/jailsonh3/" />
 
     </QuizBackground>
-  )
+  );
 }

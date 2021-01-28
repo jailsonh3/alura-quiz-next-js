@@ -1,7 +1,9 @@
+/* eslint-disable react/react-in-jsx-scope */
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  background-color: #00000070;
+  background-color: #ffffff70;
+  color: #000;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -11,12 +13,12 @@ const FooterWrapper = styled.footer`
     margin-right: 23px;
   }
   a {
-    color: white;
+    color: #000;
     text-decoration: none;
     transition: .3s;
     &:hover,
     &:focus {
-      opacity: .5;
+      opacity: 1;
     }
     span {
       text-decoration: underline;
@@ -29,7 +31,7 @@ export default function Footer(props) {
     // eslint-disable-next-line react/jsx-props-no-spreading
     <FooterWrapper {...props}>
       <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
+        <img src="https://seeklogo.com/images/S/supernatural-logo-B075CA33F3-seeklogo.com.png" alt="Logo Alura" />
       </a>
       <p>
         Orgulhosamente criado durante

@@ -1,7 +1,8 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "bg": "http://fullhdpictures.com/wp-content/uploads/2016/07/Supernatural-Wallpaper.jpg",
+    "image_meta": "https://i.ibb.co/RcyFjtJ/supernatural.gif" ,
+    "title": "Supernatural Quiz - Alura Quiz",
+    "description": "Os irmãos Sam e Dean Winchester encaram cenários sinistros caçando monstros. Velhos truques, armas e esconderijos não funcionam mais e seus amigos os traem, forçando os irmãos a contar um com o outro enquanto enfrentam novos inimigos.",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
