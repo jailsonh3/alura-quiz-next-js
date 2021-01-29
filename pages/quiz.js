@@ -1,21 +1,62 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+
 import db from '../db.json';
+
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
+import Loading from '../src/components/Loading';
 
 function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        <Loading
+          type="spinningBubbles"
+          color={db.theme.colors.contrastText}
+          height="50px"
+          width="50px"
+        />
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        <Loading
+          type="bars"
+          color={db.theme.colors.contrastText}
+          height="50px"
+          width="50px"
+        />
+      </Widget.Content>
+    </Widget>
+  );
+}
+
+function FineshWidget() {
+  return (
+    <Widget>
+      <Widget.Header>
+        <h2>
+          Parabéns! Obrigado por jogar!
+        </h2>
+      </Widget.Header>
+
+      <img
+        alt="Resultado"
+        style={{
+          width: '100%',
+          height: '220px',
+          objectFit: 'cover',
+        }}
+        src={db.image_res}
+      />
+
+      <Widget.Content>
+        <h3>
+          Você acertou X questões, parabéns!
+        </h3>
       </Widget.Content>
     </Widget>
   );
@@ -41,6 +82,7 @@ function QuestionWidget({
         style={{
           width: '100%',
           height: '150px',
+          objectPosition: '0 17%',
           objectFit: 'cover',
         }}
         src={question.image}
@@ -54,8 +96,8 @@ function QuestionWidget({
         </p>
 
         <form
-          onSubmit={(infosDoEvento) => {
-            infosDoEvento.preventDefault();
+          onSubmit={(event) => {
+            event.preventDefault();
             onSubmit();
           }}
         >
@@ -67,6 +109,7 @@ function QuestionWidget({
                 htmlFor={alternativeId}
               >
                 <input
+                  // style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
                   type="radio"
@@ -128,7 +171,7 @@ export default function QuizPage() {
 
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
-        {screenState === screenStates.RESULT && <div>Você acertou X questões, parabéns!</div>}
+        {screenState === screenStates.RESULT && <FineshWidget />}
       </QuizContainer>
     </QuizBackground>
   );

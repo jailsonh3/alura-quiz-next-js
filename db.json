@@ -1,29 +1,56 @@
 {
     "bg": "http://fullhdpictures.com/wp-content/uploads/2016/07/Supernatural-Wallpaper.jpg",
     "image_meta": "https://i.ibb.co/RcyFjtJ/supernatural.gif" ,
+    "image_res": "https://media.giphy.com/media/7j3UoXzbjvaIo/giphy.gif",
     "title": "Supernatural Quiz - Alura Quiz",
     "description": "Os irmãos Sam e Dean Winchester encaram cenários sinistros caçando monstros. Velhos truques, armas e esconderijos não funcionam mais e seus amigos os traem, forçando os irmãos a contar um com o outro enquanto enfrentam novos inimigos.",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://media.giphy.com/media/usu9h4RgHNdyE/giphy.gif",
+        "title": "Qual o motivo da morte de John Winchester?",
+        "description": "Tenho certeza que ele foi pro the walking dead!",
+        "answer": 3,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Para ressucitar a Mary",
+          "Para salvar o Sam",
+          "Ele fez um pacto",
+          "Para salvar o Dean"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/bNGQJAg3QlNNC/giphy.gif",
+        "title": "Em qual episódio Lúcifer volta para a jaula?",
+        "description": "Será que ele ficou irritado?!",
+        "answer": 2,
+        "alternatives": [
+           "Episódio 15 da 02° Temporada",
+           "Episódio 18 da 11° Temporada",
+           "Episódio 22 da 05° Temporada",
+           "Episódio 20 da 10° Temporada"
+        ]
+      },
+      {
+        "image": "https://pm1.narvii.com/6840/6a0675c4268a1cc625fe3ea878ee60b1b35d4c27v2_hq.jpg",
+        "title": "Quais são os 4 cavaleiros do Apocalipse?",
+        "description": "Dizem que eles estão de carro agora! rsrrs",
+        "answer": 1,
+        "alternatives": [
+           "Doença, Dor, Morte e Fome",
+           "Caim, Guerra, Morte e Fome",
+           "Peste, Guerra, Morte e Fome",
+           "Peste, Guerra, Morte e Abaddon"
+        ]
+      },
+      {
+        "image": "http://samueu.com.br/s-noticias/server/php/files/osric-chau-retorna-como-kevin-em-supernatural1.jpg",
+        "title": "Por qual motivo Gadreel matou Kevin Tran na 9ª temporada?",
+        "description": "Esse é Kevin Tran ele tá no curso avançado!",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Por ordens do Metatron",
+           "Por ordens de Castiel",
+           "Por que ele quis",
+           "Porque ele era chato"
         ]
       }
     ],

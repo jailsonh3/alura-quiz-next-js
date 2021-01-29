@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -7,20 +6,12 @@ import db from '../db.json';
 
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
+import QuizContainer from '../src/components/QuizContainer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizLogo from '../src/components/QuizLogo';
 import Footer from '../src/components/Footer';
-
-const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 export default function Home() {
   const router = useRouter();
@@ -48,19 +39,28 @@ export default function Home() {
               // console.log('fazendo um submissão por meio do react');
             }}
             >
-              <input
+              {/* <input
                 onChange={(event) => {
                   // console.log(event.target.value);
                   // name = event.target.value;
                   setName(event.target.value);
                 }}
                 placeholder="Diga o seu nome"
+              /> */}
+              <Input
+                name="nomeDoUsuario"
+                placeholder="Diga o seu nome"
+                value={name}
+                onChange={(event) => {
+                  setName(event.target.value);
+                }}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {' '}
-                {name}
-              </button>
+              <Button
+                type="submit"
+                disabled={name.length === 0}
+              >
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
 
