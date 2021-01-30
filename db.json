@@ -33,7 +33,7 @@
         "image": "https://pm1.narvii.com/6840/6a0675c4268a1cc625fe3ea878ee60b1b35d4c27v2_hq.jpg",
         "title": "Quais são os 4 cavaleiros do Apocalipse?",
         "description": "Dizem que eles estão de carro agora! rsrrs",
-        "answer": 1,
+        "answer": 2,
         "alternatives": [
            "Doença, Dor, Morte e Fome",
            "Caim, Guerra, Morte e Fome",
@@ -51,6 +51,78 @@
            "Por ordens de Castiel",
            "Por que ele quis",
            "Porque ele era chato"
+        ]
+      },
+      {
+        "image": "https://i.ibb.co/RcyFjtJ/supernatural.gif",
+        "title": "Em que ano foi ao ar pela 1ª vez supernatural? Dia mês e ano.",
+        "description": "Quero só ver você se lembra!",
+        "answer": 1,
+        "alternatives": [
+          "09 de agosto de 2004",
+          "13 de setembro de 2005",
+          "15 de outrubro de 2006",
+          "10 de setembro de 2005"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/nHoIlj7KrC8og/giphy.gif",
+        "title": "Quantos anos equivale 4 meses no inferno?",
+        "description": "Imagina 2020 no Inferno! Melhor nem fazer as contas ^_^",
+        "answer": 3,
+        "alternatives": [
+          "40 minutos",
+          "100 anos",
+          "15 dias",
+          "40 anos"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/imJROsRKwBdeg/giphy.gif",
+        "title": "Em que episódio e em que ano Castiel entrou pro elenco de SPN?",
+        "description": "Castiel, o anjo que aprendeu com o cara da pizza!",
+        "answer": 2,
+        "alternatives": [
+          "Sempre a mesma canção, 2010",
+          "Enfrentando o capeta, 2009",
+          "A ressureição de Lázaro, 2008",
+          "Exagerado, 2011"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/jIkID6HuDtkxG/giphy.gif",
+        "title": "Qual o nome da lobisomem que Sam tem uma paixonite no episódio heart?",
+        "description": "Essa aí deixou marcas!! se é que me entende rsrs",
+        "answer": 1,
+        "alternatives": [
+          "Ruby",
+          "Madison",
+          "Lisa",
+          "Amélia"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/26xByre3c7NxqcbZK/giphy.gif",
+        "title": "Em que episódio Dean vai pro inferno?",
+        "description": "CUIDADO DEAN, ATRAZ DE VOCÊ!! DEAN? ^O^",
+        "answer": 2,
+        "alternatives": [
+          "Canção do cine",
+          "A morte na água",
+          "Enfrentando o capeta",
+          "Exagerado"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3ohA2Sg6EqqpGJIipW/giphy.gif",
+        "title": "Antes de pegar o papel, jared padalecki estava em que série?",
+        "description": "Nem vem, como é que pode um Dean virar um Sam?! ",
+        "answer": 1,
+        "alternatives": [
+          "Smallville",
+          "Gilmore girls",
+          "Game of thrones",
+          "Supergirl"
         ]
       }
     ],

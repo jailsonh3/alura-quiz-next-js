@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 function Logo({ className }) {
   return (
-    <img className={className} width="135" height="120" src="https://i.ibb.co/4NqBvFr/logo.png" />
+    <img className={className} width="135" height="100" src="https://i.ibb.co/4NqBvFr/logo.png" />
   );
 }
 
