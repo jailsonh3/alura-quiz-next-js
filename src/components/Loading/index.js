@@ -3,23 +3,22 @@ import ReactLoading from 'react-loading';
 import styled from 'styled-components';
 
 export const Section = styled.div`
-    //margin: auto;
-    padding-left: 120px;
+    padding-left: 42%;
+    margin-top: -16px;
+    margin-bottom: -10;
 `;
 
 const Loading = ({
   // eslint-disable-next-line react/prop-types
-  type, color, ...props
+  type, color, width, height,
 }) => (
   <Section>
-
     <ReactLoading
       type={type}
       color={color}
-      // eslint-disable-next-line react/jsx-props-no-spreading
-      {...props}
+      width={width}
+      height={height}
     />
-
   </Section>
 );
 
